@@ -28,11 +28,16 @@ namespace csassignment2
             Console.Write ("Insert your PIN here: ");
             int pin = int.Parse (Console.ReadLine());
             Console.WriteLine ("Your pin is correct");
-            Console.WriteLine ("Please enter your transaction type ");
-            Console.Write ("Enter your transaction type here: ");
-            transaction = Console.ReadLine();
+            Console.WriteLine ("Please Select your transaction type number");
 
-            if (transaction = (transaction[0]))
+            Console.Write("1 =========================  withdrawal");
+            Console.Write("2 =========================  transfer");
+            Console.Write("3 =========================  airtime");
+            Console.Write("4 =========================  pay bills");
+
+            int TransactReply = int.Parse(Console.ReadLine());
+
+            if (traTransactReplynsaction = 1)
             {
                 Console.WriteLine("How much would you like to withdraw? ");
                 Console.Write ("Enter amount here: ");
@@ -41,66 +46,108 @@ namespace csassignment2
                 if (amount>money[6])
                 {
                     Console.WriteLine ("You cannot withdraw in excess of twenty thousand naira ");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else if (amount<money[0])
                 {
                     Console.WriteLine ("You cannot withdraw less than five hundred naira");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else if (amount == money[0])
                 {
                     Console.WriteLine ("Please take your " (money[0]));
                     Console.WriteLine ("Thank you for banking with us");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else if (amount == money[1])
                 {
                     Console.WriteLine ("Please take your " (money[1]));
                     Console.WriteLine ("Thank you for banking with us");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else if (amount == money[2])
                 {
                     Console.WriteLine ("Please take your " (money[2]));
                     Console.WriteLine ("Thank you for banking with us");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                else if (amount == money[3])
                 {
                     Console.WriteLine ("Please take your " (money[3]));
                     Console.WriteLine ("Thank you for banking with us");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else if (amount == money[4])
                 {
                     Console.WriteLine ("Please take your " (money[4]));
                     Console.WriteLine ("Thank you for banking with us");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else if (amount == money[5])
                 {
                     Console.WriteLine ("Please take your " (money[5]));
                     Console.WriteLine ("Thank you for banking with us");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else if (amount == money[6])
                 {
                     Console.WriteLine ("Please take your " (money[6]));
                     Console.WriteLine ("Thank you for banking with us");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
                 else
                 {
                     Console.WriteLine ("Transaction failed, please take your atm card and try again");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("Press any key to exit!");
+                    Console.ReadLine();
                 }
             }
-            else  if (transaction = transaction[1])
+            else  if (TransactReply = 2)
             {
                 Console.WriteLine ("Unable to perform such transaction now");
+                Console.WriteLine(" ");
+                Console.WriteLine("Press any key to exit!");
+                Console.ReadLine();
             }
-            else if (transaction = transaction[2])
+            else if (TransactReply = 3)
             {
                 Console.WriteLine ("Unable to perform such transaction now");
+                Console.WriteLine(" ");
+                Console.WriteLine("Press any key to exit!");
+                Console.ReadLine();
             }
-            else if (transaction = transaction[3])
+            else if (TransactReply = 4)
             {
                 Console.WriteLine ("Unable to perform such transaction now");
+                Console.WriteLine(" ");
+                Console.WriteLine("Press any key to exit!");
+                Console.ReadLine();
             }
             else
             {
                 Console.WriteLine ("Transaction failed");
+                Console.WriteLine(" ");
+                Console.WriteLine("Press any key to exit!");
+                Console.ReadLine();
             }
             
         }
