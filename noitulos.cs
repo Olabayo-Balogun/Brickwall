@@ -31,11 +31,11 @@ namespace csassignment2
             Console.WriteLine ("Input 4 for Transfer");
 
             Console.Write ("Enter your transaction type here: ");
-            transaction = Console.ReadLine();
+            TransactReply = int.Parse(Console.ReadLine());
 
-            Switch(transaction)
+            switch(TransactReply)
             {
-                Case 1: 
+                case 1: 
                     Console.WriteLine("How much would you like to Withdraw? ");
                     Console.Write ("Enter amount here: ");
                     int amount = int.Parse(Console.ReadLine());
@@ -50,37 +50,37 @@ namespace csassignment2
                     }
                     else if (amount == money[0])
                     {
-                        Console.WriteLine ("Please take your N{0}" money[0]);
+                        Console.WriteLine ("Please take your N{0}" + money[0]);
                         Console.WriteLine ("Thank you for banking with us");
                     }
                     else if (amount == money[1])
                     {
-                        Console.WriteLine ("Please take your N{0}" money[1]);
+                        Console.WriteLine ($"Please take your N{0}", money[1]);
                         Console.WriteLine ("Thank you for banking with us");
                     }
                     else if (amount == money[2])
                     {
-                        Console.WriteLine ("Please take your N{0}" money[2]);
+                        Console.WriteLine ($"Please take your N{0}", money[2]);
                         Console.WriteLine ("Thank you for banking with us");
                     }
                     else if (amount == money[3])
                     {
-                        Console.WriteLine ("Please take your N{0}" money[3]);
+                        Console.WriteLine ($"Please take your N{0}", money[3]);
                         Console.WriteLine ("Thank you for banking with us");
                     }
                     else if (amount == money[4])
                     {
-                        Console.WriteLine ("Please take your N{0}" money[4]);
+                        Console.WriteLine ($"Please take your N{0}", money[4]);
                         Console.WriteLine ("Thank you for banking with us");
                     }
                     else if (amount == money[5])
                     {
-                        Console.WriteLine ("Please take your N{0}" money[5]);
+                        Console.WriteLine ($"Please take your N{0}", money[5]);
                         Console.WriteLine ("Thank you for banking with us");
                     }
                     else if (amount == money[6])
                     {
-                        Console.WriteLine ("Please take your N{0}" money[6]);
+                        Console.WriteLine ($"Please take your N{0}", money[6]);
                         Console.WriteLine ("Thank you for banking with us");
                     }
                     else
@@ -90,15 +90,15 @@ namespace csassignment2
                     
                     break;
 
-                Case 2: 
+                case 2: 
                     Console.WriteLine ("Unable to perform such transaction now");
                     break;
 
-                Case 3:
+                case 3:
                     Console.WriteLine ("Unable to perform such transaction now");
                     break;
 
-                Case 4:
+                case 4:
                     Console.WriteLine ("Unable to perform such transaction now");
                     break;
                 
