@@ -37,7 +37,7 @@ namespace csassignment2
 
             int TransactReply = int.Parse(Console.ReadLine());
 
-            if (traTransactReplynsaction = 1)
+            if (TransactReply = 1)
             {
                 Console.WriteLine("How much would you like to withdraw? ");
                 Console.Write ("Enter amount here: ");
